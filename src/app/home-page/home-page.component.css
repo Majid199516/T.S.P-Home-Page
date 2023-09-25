@@ -1,0 +1,67 @@
+nav .taksa-logo {
+  /* background-color: red; */
+  width: 85px;
+  height: 75px;
+  margin: 0 15px;
+}
+.navbar {
+  padding: 16px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #fff;
+}
+.links a {
+  margin-left: 32px;
+}
+header {
+  font-family: IRANSansX;
+  display: flex;
+  flex-direction: column;
+  margin: 0 151px;
+  flex-wrap: nowrap;
+}
+.signin-btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  background-color: #204066;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.img-slider {
+  background-image: url(../../assets/shared/images/Image-slider.png);
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 1000px;
+  margin: auto;
+}
+hr {
+  border: 1px solid #fff;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.container {
+  background-image: url(../../assets/shared/images/Image-slider.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: 849px;
+}
+.signin-btn:hover,
+.links a:hover {
+  cursor: pointer;
+}

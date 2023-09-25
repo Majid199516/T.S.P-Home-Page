@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "IRANSansX";
+  src: url(../assets/shared/fonts/IRANSansX-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansX";
+  src: url(../assets/shared/fonts/IRANSansX-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IranSansNum";
+  src: url(../assets/shared/fonts/IRANSansXFaNum-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.img-slider {
+  background-image: url(../../assets/shared/images/Image-slider.png);
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 1000px;
+  margin: auto;
+}
