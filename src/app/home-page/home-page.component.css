@@ -14,7 +14,7 @@ nav .taksa-logo {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  color: #fff;
+  color: #204066;
 }
 .links a {
   margin-left: 32px;
@@ -37,13 +37,13 @@ header {
   border-radius: 4px;
   padding: 8px 16px;
 }
-.img-slider {
+/* .img-slider {
   background-image: url(../../assets/shared/images/Image-slider.png);
   background-repeat: no-repeat;
   width: 1440px;
   height: 1000px;
   margin: auto;
-}
+} */
 hr {
   border: 1px solid #fff;
 }
@@ -52,10 +52,11 @@ hr {
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
+  box-shadow: 0 0 10px 0 rgba(32, 82, 149, 0.25);
 }
 .container {
-  background-image: url(../../assets/shared/images/Image-slider.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../../assets/shared/images/Image-slider.png);
+  background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -64,4 +65,31 @@ hr {
 .signin-btn:hover,
 .links a:hover {
   cursor: pointer;
+}
+.articles {
+  margin-top: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: IranSansX;
+}
+.articles .article-header {
+  color: #204066;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.articles h5 {
+  color: #3d3d3d;
+}
+.free-sign-up li div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.free-sign-up li {
+  list-style: none;
 }

@@ -21,10 +21,3 @@
   font-style: normal;
   font-display: swap;
 }
-.img-slider {
-  background-image: url(../../assets/shared/images/Image-slider.png);
-  background-repeat: no-repeat;
-  width: 1440px;
-  height: 1000px;
-  margin: auto;
-}
