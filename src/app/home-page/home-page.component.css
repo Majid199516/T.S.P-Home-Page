@@ -63,7 +63,8 @@ hr {
   height: 849px;
 }
 .signin-btn:hover,
-.links a:hover {
+.links a:hover,
+.add-invoice:hover {
   cursor: pointer;
 }
 .articles {
@@ -82,14 +83,285 @@ hr {
   text-align: center;
   margin-bottom: 48px;
 }
+.free-sign-up {
+  display: flex;
+  width: 100%;
+  margin-top: 166px;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+}
 .articles h5 {
   color: #3d3d3d;
 }
 .free-sign-up li div {
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
   align-items: center;
 }
 .free-sign-up li {
   list-style: none;
+  margin: 36px;
+}
+.free-sign-up .sign-up-img {
+  width: 40%;
+  border-radius: 8px;
+  margin-left: 246px;
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+}
+.invoice-sample1 {
+  width: 479px;
+  height: 339px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+}
+.free-sign-up li div h6 {
+  margin-right: 12px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  color: #3d3d3d;
+}
+.free-sign-up li div p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #242424;
+  margin-top: 12px;
+}
+.sign-up-guide {
+  width: 50%;
+  margin-right: 210px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-left: -130px;
+  box-sizing: content-box;
+  word-spacing: 2px;
+}
+.sign-up-guide a {
+  color: #2e81ff;
+}
+.sign-up-guide li div {
+  display: flex;
+  /* justify-content: start; */
+}
+.shadow {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  background: #f5f7fa;
+  height: 530px;
+  z-index: 0;
+}
+.invoice-sample2 {
+  width: 311px;
+  height: 254px;
+  border-radius: 7px;
+  z-index: 2;
+  position: relative;
+  left: -260px;
+  top: 70px;
+  box-shadow: 0px 3.69125px 3.69125px 0px rgba(0, 0, 0, 0.4);
+}
+.add-invoice {
+  background-color: #f27f51;
+  font-family: IRANSansX;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #fff;
+  width: 254px;
+  height: 50px;
+  margin-right: 40px;
+  border: none;
+  border-radius: 8px;
+  transition: all 100ms;
+  box-shadow: 0 5px #666;
+}
+.add-invoice:hover {
+  background-color: #f7662d;
+}
+
+.add-invoice:active {
+  background-color: #f7662d;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+.signin-btn:hover {
+  background-color: rgba(32, 64, 102, 0.9);
+}
+.connected {
+  width: 81px;
+  height: 50px;
+  position: absolute;
+  z-index: 3;
+  top: 128px;
+  right: 200px;
+}
+.bullets {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.bullets svg {
+  width: 72px;
+  height: 65px;
+  margin: 7px 0;
+}
+.taksa-advantages,
+.taksa-usage-avantages {
+  background: #f5f7fa;
+  width: 100%;
+}
+.taksa-usage-avantages {
+  margin-top: 208px;
+  position: relative;
+}
+.taksa-advantages h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #204066;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.decription {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.decription div p {
+  text-align: center;
+  font-family: IranSansNum;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 20px;
+  background-color: #fff;
+  margin: 0 2px;
+  box-shadow: 0px 4px 8px 0px rgba(171, 190, 209, 0.4);
+  border-radius: 100px;
+  width: 432px;
+  height: 64px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.decription .ladder {
+  /* width: 39.582px;
+  height: 290px; */
+  margin: 25px 0;
+}
+.decription .left-side {
+  margin-top: 27px;
+  margin-bottom: 200px;
+}
+.decription .right-side p:nth-child(2) {
+  margin-top: 42px;
+  margin-bottom: 44px;
+}
+.decription .right-side:first-child {
+  margin-top: 45px;
+}
+.decription .left-side p:first-child {
+  margin-top: 29px;
+  margin-bottom: 38px;
+}
+.decription .left-side p:nth-child(2) {
+  margin-top: 38px;
+  margin-bottom: 44px;
+}
+.decription .bullet {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -62px;
+  right: 0;
+}
+.bullet svg {
+  margin-bottom: 15px;
+}
+.taksa-target {
+  width: 754px;
+  height: 410px;
+  background-color: #204066;
+  margin: auto;
+  margin-bottom: 200px;
+  border-radius: 8px;
+  padding: 64px 65px 46px 66px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: baseline; */
+}
+.taksa-target-title {
+  display: inline;
+  text-align: center;
+  /* font-family: Anjoman; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.taksa-target span:first-of-type {
+  position: absolute;
+  top: 65px;
+  right: 69px;
+}
+.target-article {
+  color: #fff;
+  text-align: justify;
+  font-family: IRANSansX;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  /* word-spacing: 1px; */
+  margin: 48px 97px 64px 98px;
+}
+.taksa-target span:last-of-type {
+  position: absolute;
+  bottom: 65px;
+  left: 69px;
+}
+.circle {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+  width: 63px;
+  height: 63px;
+}
+.circles {
+  position: absolute;
+  right: -78px;
+  top: 436px;
+}
+.add-invoice-steps h2 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  /* font-family: Anjoman; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #204066;
 }
