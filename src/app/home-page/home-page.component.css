@@ -7,7 +7,7 @@ nav .taksa-logo {
 .navbar {
   padding: 16px 0 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 65px;
   font-size: 16px;
@@ -15,6 +15,11 @@ nav .taksa-logo {
   font-weight: 500;
   line-height: 22px;
   color: #204066;
+  position: fixed;
+  left: -200;
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
 }
 .links a {
   margin-left: 32px;
@@ -23,6 +28,7 @@ header {
   font-family: IRANSansX;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 151px;
   flex-wrap: nowrap;
 }
@@ -135,15 +141,18 @@ hr {
   margin-top: 12px;
 }
 .sign-up-guide {
-  width: 50%;
-  margin-right: 210px;
+  width: 60%;
+  margin-right: 140px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
-  margin-left: -130px;
+  /* margin-left: -130px; */
   box-sizing: content-box;
   word-spacing: 2px;
+}
+.sign-up-guide p {
+  padding-right: 35px;
 }
 .sign-up-guide a {
   color: #2e81ff;
@@ -184,7 +193,7 @@ hr {
   border: none;
   border-radius: 8px;
   transition: all 100ms;
-  box-shadow: 0 5px #666;
+  box-shadow: 5px 5px #666;
 }
 .add-invoice:hover {
   background-color: #f7662d;
@@ -364,4 +373,50 @@ hr {
   font-weight: 700;
   line-height: 28px;
   color: #204066;
+}
+.add-invoice-steps {
+  display: flex;
+  flex-direction: column;
+  color: #204066;
+}
+.add-invoice-steps .odd-steps div p:first-of-type,
+.add-invoice-steps .even-steps div p:first-of-type {
+  font-family: IranSanSNum;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+.odd-steps {
+  display: flex;
+  gap: 145px;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+/* .odd-steps div:first-child {
+} */
+.add-invoice-steps h2 {
+  display: block;
+  text-align: center;
+}
+.odd-steps div {
+  text-align: center;
+}
+.view-of-steps img {
+  width: 1056.864px;
+  height: 215px;
+}
+.odd-steps p:last-child,
+.even-steps p:last-child {
+  width: 158px;
+  height: 30px;
+}
+
+.even-steps {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* margin-left: 10px; */
+  gap: 150px;
 }
