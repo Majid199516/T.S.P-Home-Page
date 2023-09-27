@@ -20,6 +20,7 @@ nav .taksa-logo {
   background-color: #fff;
   width: 100%;
   z-index: 5;
+  box-shadow: 0px 0px 10px 0px rgba(32, 82, 149, 0.25);
 }
 .links a {
   margin-left: 32px;
@@ -88,6 +89,7 @@ hr {
   line-height: 28px;
   text-align: center;
   margin-bottom: 48px;
+  font-family: Anjoman;
 }
 .free-sign-up {
   display: flex;
@@ -245,6 +247,7 @@ hr {
   margin-top: 200px;
   margin-bottom: 100px;
   text-align: center;
+  font-family: Anjoman;
 }
 .decription {
   display: flex;
@@ -321,7 +324,7 @@ hr {
 .taksa-target-title {
   display: inline;
   text-align: center;
-  /* font-family: Anjoman; */
+  font-family: Anjoman;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -378,6 +381,8 @@ hr {
   display: flex;
   flex-direction: column;
   color: #204066;
+  position: relative;
+  /* margin-bottom: 233px; */
 }
 .add-invoice-steps .odd-steps div p:first-of-type,
 .add-invoice-steps .even-steps div p:first-of-type {
@@ -399,6 +404,7 @@ hr {
 .add-invoice-steps h2 {
   display: block;
   text-align: center;
+  font-family: Anjoman;
 }
 .odd-steps div {
   text-align: center;
@@ -419,4 +425,228 @@ hr {
   text-align: center;
   /* margin-left: 10px; */
   gap: 150px;
+}
+.arrow {
+  position: absolute;
+  top: 625px;
+  right: 655px;
+}
+.taksa-start {
+  color: #f27f51;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-right: 500px;
+  margin-top: 20px;
+}
+.help-content {
+  margin-top: 233px;
+  position: relative;
+  /* text-align: center; */
+  display: flex;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* width: 100%; */
+  flex-direction: column;
+}
+.help {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 200px 0;
+}
+#taksa-help {
+  width: 914px;
+  height: 570px;
+  transition: 1s;
+  transform: rotate(-3.459deg);
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  z-index: 2;
+}
+#soul {
+  position: absolute;
+}
+#soul::before {
+  content: " ";
+  width: 914px;
+  height: 570px;
+  /* margin: auto; */
+  border-radius: 8px;
+  background: #bfd3eb;
+  position: absolute;
+  z-index: -1;
+}
+.taksa-help p {
+  text-align: justify;
+  transform: rotate(3.459deg);
+  color: #3d3d3d;
+  text-align: justify;
+  font-family: IRANSansNum;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 129px 126px;
+}
+.taksa-help h2 {
+  transform: rotate(3.459deg);
+  margin: 94px 0 54px;
+  color: #204066;
+  text-align: center;
+  font-family: Anjoman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.help .bullets {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  margin: 7px 3px;
+}
+.ribbon {
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+  margin-bottom: 90px;
+}
+.solutions {
+  background: #f5f7fa;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 200px 0 0 0; */
+  position: relative;
+}
+.solutions h2 {
+  color: #204066;
+  text-align: right;
+  font-family: Anjoman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 200px auto 100px;
+}
+.semicircle1,
+.semicircle2,
+.semicircle3 {
+  position: absolute;
+  right: 0;
+}
+.semicircle1 {
+  top: 77px;
+}
+.semicircle2 {
+  top: 49px;
+}
+.semicircle3 {
+  top: 21px;
+}
+.connecting-taksa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.connecting-right-side,
+.connecting-left-side {
+  display: flex;
+  width: 415px;
+  height: 482px;
+  padding: 35.985px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #fff;
+  margin-bottom: 200px;
+  /* gap: 70px; */
+}
+.connecting-left-side ul,
+.connecting-right-side ul {
+  align-self: self-start;
+  margin-right: 36px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.connecting-left-side h3,
+.connecting-right-side h3 {
+  text-align: center;
+  padding: 0 70px;
+  text-align: center;
+  font-family: IRANSansX;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.98px;
+}
+.connecting-left-side input,
+.connecting-right-side input {
+  width: 273px;
+  height: 51px;
+  padding: 11.995px 26.988px;
+  border-radius: 11.995px;
+  border: none;
+  background: #12b48b;
+  color: #fff;
+  font-family: IRANSansX;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.connecting-left-side {
+  gap: 70px;
+}
+.connecting-right-side {
+  gap: 55px;
+}
+.solutions .bullets {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 650px;
+}
+.questions {
+  width: 100%;
+  /* margin: 200px 0 0; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.questions .bullets {
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  top: 50px;
+}
+.questions h2 {
+  margin: 200px 0 100px;
+  color: #204066;
+  text-align: right;
+  font-family: Anjoman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.questions .semicircles {
+  position: absolute;
+  top: 0;
+  left: 175px;
 }
