@@ -492,13 +492,13 @@ hr {
   font-family: IRANSansNum;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
-  padding: 0 129px 126px;
+  padding: 0 110px 126px;
 }
 .taksa-help h2 {
   transform: rotate(3.459deg);
-  margin: 94px 0 54px;
+  margin: 75px 0 50px;
   color: #204066;
   text-align: center;
   font-family: Anjoman;
@@ -626,8 +626,10 @@ hr {
   /* margin: 200px 0 0; */
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #3d3d3d;
 }
 .questions .bullets {
   display: flex;
@@ -649,4 +651,312 @@ hr {
   position: absolute;
   top: 0;
   left: 175px;
+}
+.common-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.common-questions > div {
+  padding: 24px 24px 24px 20px;
+  /* margin: 24px 24px 24px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #f5f7fa;
+  width: 710px;
+}
+.chevron {
+  display: inline-block;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  transition: all 400ms;
+  margin: 0 24px 24px 20px;
+}
+/* .common-questions div {
+  display: flex;
+  flex-direction: column;
+  background-color: #204066;
+} */
+.firstColumn,
+.second-column,
+.third-column,
+.forth-column,
+.fifth-column {
+  display: flex;
+  flex-direction: column;
+  transition: all 400ms;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  font-family: IranSansNum;
+}
+.firstRow,
+.second-row,
+.third-row,
+.forth-row,
+.fifth-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.column:hover {
+  cursor: pointer;
+}
+.row p:first-child {
+  padding: 0 24px 24px 20px;
+}
+.questions .bullets2nd {
+  position: absolute;
+  left: 0;
+  top: 800px;
+}
+.questions > input {
+  margin: 74px 0 200px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 2px solid #12b48b;
+  color: #12b48b;
+  width: 160px;
+  font-family: IRANSansX;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  background-color: transparent;
+}
+.news {
+  background: #f5f7fa;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: #3d3d3d;
+}
+.news h2 {
+  margin: 200px 0 100px;
+  color: #204066;
+  font-family: anjoman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.news-boxes {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.news-boxes > div {
+  width: 348px;
+  height: 513px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px #abbed166;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.news-boxes > div > img {
+  width: 100%;
+  height: 244px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.news-boxes span {
+  padding: 8px;
+  border-radius: 24px;
+  background: #f27f5133;
+  width: 45px;
+  height: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 24px 0px 16px;
+  color: #f27f51;
+}
+.news-boxes div:nth-child(2) div > span {
+  color: #205295;
+  background: #d8e5f83b;
+}
+.bullets2nd svg {
+  margin: 0 13px 0 5px;
+}
+.news .threeSemicircle {
+  position: absolute;
+  top: 5px;
+  right: -13px;
+  transform: rotate(-90deg);
+}
+.news-boxes h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+.news-boxes > div > div {
+  padding: 0 16px 24px;
+}
+.news-boxes p {
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.news-boxes a {
+  color: #204066;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  margin-top: 16px;
+}
+.news-boxes a svg {
+  margin-right: 4px;
+}
+.news-boxes a div {
+  display: flex;
+  align-items: flex-end;
+}
+.news input {
+  color: #12b48b;
+  padding: 10px 24px;
+  width: 160px;
+  border-radius: 8px;
+  border: 2px solid #12b48b;
+  background-color: #fff;
+  font-family: IranSansX;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 200px;
+}
+.news input {
+  cursor: pointer;
+}
+.news > .bullets-3rd {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 3px;
+}
+footer {
+  width: 100%;
+  background-color: #204066;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: IranSansX;
+}
+.taksa-footer-logo h6 {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
+}
+.taksa-footer-logo img {
+  width: 59px;
+  height: 52.204px;
+}
+.taksa-footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.footer-right-side,
+.footer-left-side {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.taksa-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.taksa-description p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+  width: 270px;
+}
+.usefull-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  align-self: flex-start;
+}
+.usefull-links h6 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 15px 0 32px;
+}
+
+.usefull-links a {
+  margin: 0 0 12px;
+}
+.usefull-links a:hover {
+  cursor: pointer;
+}
+.phone-info,
+.mail-info,
+.location-info {
+  display: flex;
+}
+.contact-us {
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+}
+.vertical-line {
+  margin: 48px 0;
+}
+.iso {
+  display: flex;
+}
+.iso img {
+  width: 94.417px;
+  height: 102.725px;
+}
+.iso div {
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 0 8px;
+}
+.phone {
+  font-family: IranSansNum;
 }

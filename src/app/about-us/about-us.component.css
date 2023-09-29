@@ -1,0 +1,36 @@
+.container {
+  font-family: IranSansX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.smart-process {
+  width: 100%;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.smart-process span {
+  font-family: IranSansNum;
+}
+.smart-process p {
+  width: 946px;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  color: #3d3d3d;
+}
+.smart-process h2 {
+  margin: 150px 0 100px;
+}
+.smart-process p:first-of-type {
+  margin: 0 0 30px;
+}
+.smart-process p:last-of-type {
+  margin: 0 0 150px;
+}
