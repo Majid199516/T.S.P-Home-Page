@@ -36,3 +36,7 @@
   font-style: normal;
   font-display: swap;
 }
+.main-container {
+  display: flex;
+  flex-direction: column;
+}

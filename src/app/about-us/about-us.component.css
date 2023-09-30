@@ -7,17 +7,18 @@
 }
 .smart-process {
   width: 100%;
-  background: #f5f7fa;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .smart-process span {
   font-family: IranSansNum;
 }
 .smart-process p {
-  width: 946px;
+  width: 49%;
   text-align: justify;
   font-size: 18px;
   font-style: normal;
@@ -27,10 +28,34 @@
 }
 .smart-process h2 {
   margin: 150px 0 100px;
+  color: #204066;
+  font-family: Anjoman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
 }
 .smart-process p:first-of-type {
   margin: 0 0 30px;
 }
 .smart-process p:last-of-type {
   margin: 0 0 150px;
+}
+.bullets {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  gap: 14px;
+  top: 80px;
+  margin: 0 3px;
+}
+.semicircles {
+  position: absolute;
+  left: 0;
+}
+.circles {
+  position: absolute;
+  right: 0px;
+  bottom: 41px;
 }

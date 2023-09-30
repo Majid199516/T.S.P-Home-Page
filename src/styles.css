@@ -6,3 +6,14 @@
 html {
   scroll-behavior: smooth;
 }
+.mat-expansion-indicator::after {
+  color: #12b48b !important;
+  width: 4px;
+  height: 4px;
+  display: flex;
+  align-items: safe;
+  justify-content: baseline;
+}
+.mat-expansion-indicator {
+  /* background-color: #12b48b; */
+}
