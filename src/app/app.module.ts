@@ -8,6 +8,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesComponent } from './services/services.component';
+import { CompanyComponent } from './services/company/company.component';
+import { Service2Component } from './services/service2/service2.component';
+import { ServicesMenuComponent } from './services/services-menu/services-menu.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutUsComponent,
     QuestionsComponent,
     FooterComponent,
+    ServicesComponent,
+    CompanyComponent,
+    Service2Component,
+    ServicesMenuComponent,
 
   ],
   imports: [
