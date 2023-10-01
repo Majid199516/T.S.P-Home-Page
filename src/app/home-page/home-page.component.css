@@ -382,6 +382,9 @@ hr {
   flex-direction: column;
   color: #204066;
   position: relative;
+  font-size: 16px;
+  font-weight: 700;
+
   /* margin-bottom: 233px; */
 }
 .add-invoice-steps .odd-steps div p:first-of-type,
@@ -392,6 +395,9 @@ hr {
   font-weight: 900;
   line-height: normal;
   text-align: center;
+}
+.add-invoice-steps .odd-steps div p:nth-child(3) {
+  font-weight: 400;
 }
 .odd-steps {
   display: flex;
@@ -631,6 +637,20 @@ hr {
   align-items: center;
   color: #3d3d3d;
 }
+.question {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  width: 710px;
+}
+.question-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 0 200px;
+}
 .questions .bullets {
   display: flex;
   flex-direction: row;
@@ -657,69 +677,13 @@ hr {
   flex-direction: column;
   gap: 16px;
 }
-.common-questions > div {
-  padding: 24px 24px 24px 20px;
-  /* margin: 24px 24px 24px 20px; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px;
-  background: #f5f7fa;
-  width: 710px;
-}
-.chevron {
-  display: inline-block;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  transition: all 400ms;
-  margin: 0 24px 24px 20px;
-}
-/* .common-questions div {
-  display: flex;
-  flex-direction: column;
-  background-color: #204066;
-} */
-.first-column,
-.second-column,
-.third-column,
-.forth-column,
-.fifth-column {
-  display: flex;
-  flex-direction: column;
-  transition: all 400ms;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  font-family: IranSansNum;
-}
-.firstRow,
-.second-row,
-.third-row,
-.forth-row,
-.fifth-row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  height: 100px;
-}
 
-.column:hover {
-  cursor: pointer;
-}
-.row p:first-child {
-  padding: 0 24px 24px 20px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-}
 .questions .bullets2nd {
   position: absolute;
   left: 0;
   top: 800px;
 }
-.questions > input {
+.questions input {
   margin: 74px 0 200px;
   padding: 10px 24px;
   border-radius: 8px;
@@ -732,6 +696,13 @@ hr {
   font-weight: 500;
   line-height: 28px;
   background-color: transparent;
+}
+.check-mark {
+  list-style: none;
+}
+
+.check-mark li:before {
+  content: "✓ ";
 }
 .news {
   background: #f5f7fa;

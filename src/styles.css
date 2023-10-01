@@ -11,9 +11,62 @@ html {
   width: 4px;
   height: 4px;
   display: flex;
-  align-items: safe;
   justify-content: baseline;
+  box-sizing: content-box;
 }
 .mat-expansion-indicator {
-  /* background-color: #12b48b; */
+  margin: 0;
+  transform-origin: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mat-expansion-panel {
+  border: none;
+  padding: 20px;
+}
+.mat-expansion-panel-header-title {
+  flex-basis: content;
+}
+/* mat-expansion-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* .mat-expansion-indicator::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+mat-expansion-panel p,
+mat-expansion-panel li {
+  margin: 24px 0 0;
+  color: #3d3d3d;
+  /* text-align: right; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+mat-accordion {
+  width: 100%;
+}
+mat-expansion-panel p span {
+  font-family: IranSansNum;
+}
+mat-panel-title {
+  color: #3d3d3d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 8px;
+}
+.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: none !important;
+}
+.custom-header .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
 }

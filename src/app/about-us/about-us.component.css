@@ -7,7 +7,7 @@
 }
 .smart-process {
   width: 100%;
-  background: #fff;
+  background: #f5f7fa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,21 +41,164 @@
 .smart-process p:last-of-type {
   margin: 0 0 150px;
 }
-.bullets {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  right: 0;
-  gap: 14px;
-  top: 80px;
-  margin: 0 3px;
-}
+
 .semicircles {
   position: absolute;
   left: 0;
+  top: 855px;
 }
-.circles {
+.contact-us-content {
+  margin-top: 233px;
+  position: relative;
+  /* text-align: center; */
+  display: flex;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* width: 100%; */
+  flex-direction: column;
+}
+.contact-us {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 200px 0;
+}
+#taksa-contact-us {
+  width: 914px;
+  height: 570px;
+  transition: 1s;
+  transform: rotate(-3.459deg);
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  display: flex;
+  /* justify-content: center */
+  align-items: center;
+  z-index: 2;
+  flex-direction: column;
+}
+#soul {
   position: absolute;
-  right: 0px;
-  bottom: 41px;
+}
+#soul::before {
+  content: " ";
+  width: 914px;
+  height: 570px;
+  /* margin: auto; */
+  border-radius: 8px;
+  background: #bfd3eb;
+  position: absolute;
+  z-index: -1;
+}
+.taksa-contact-us h3 {
+  text-align: justify;
+  transform: rotate(3.459deg);
+  color: #3d3d3d;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+  padding: 0 110px 24px;
+  margin-top: 98px;
+}
+.persons-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  transform: rotate(3.459deg);
+  /* gap: 16px; */
+  width: 780px;
+}
+.last-name,
+.first-name,
+.email,
+.phone-number {
+  margin: 8px;
+  font-family: iransansnum;
+  flex-grow: 1;
+  height: 24px;
+  padding: 8px 12px;
+  width: 44%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+}
+textarea {
+  height: 120px;
+  width: 93.3%;
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: iransansnum;
+  text-overflow: ellipsis;
+}
+.persons-info button {
+  width: 96.7%;
+  margin-right: 6px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #f27f51;
+  border: none;
+  color: #fff;
+  font-family: IRANSansX;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.taksa-info {
+  display: flex;
+  margin: 0 0 140.78px;
+  gap: 19.66;
+  width: 780px;
+}
+.taksa-mail div,
+.taksa-location div,
+.taksa-phone div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid #205295;
+  width: 24px;
+  height: 24px;
+  margin-left: 19.67px;
+}
+.taksa-mail,
+.taksa-location,
+.taksa-phone {
+  height: auto;
+  width: 289px;
+  border-radius: 6px;
+  background: #f5f7fa;
+  margin: 9px;
+  padding: 13.11px 19.665px;
+  font-family: iransansnum;
+  font-size: 14px;
+  display: flex;
+  color: #204066;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.499px;
+  justify-content: flex-start;
+  align-items: center;
 }

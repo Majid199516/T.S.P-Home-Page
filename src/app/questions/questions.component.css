@@ -1,67 +1,93 @@
-.mat-mdc-form-field + .mat-mdc-form-field {
-  margin-left: 8px;
-}
-
-.custom-header .mat-expansion-panel-header-description {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-mat-accordion {
-  width: 100%;
-  background-color: #f5f7fa;
-  margin: 10px;
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: IranSansX;
+  position: relative;
+  width: 100%;
 }
-.soal {
-  width: 35%;
+.container h2 {
+  color: #204066;
+  text-align: center;
+  font-family: Anjoman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
+  margin: 150px 0 100px;
+}
+
+.question-box {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 16px;
+  margin: 0 0 200px;
 }
-.mat-expansion-panel {
-  border: none;
-  padding: 20px;
+
+.questions {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  width: 710px;
 }
-.mat-expansion-panel-header-title {
-  flex-basis: content;
-}
-/* mat-expansion-indicator {
+.top-bullets,
+.semi-circles,
+.left-bullets,
+.green-circles,
+.blue-circles,
+.bottom-bullets {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* .mat-expansion-indicator::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-mat-expansion-panel p {
-  margin: 24px 0 0;
-  color: #3d3d3d;
-  text-align: right;
+  gap: 14px;
+  flex-direction: column;
+}
+.semi-circles {
+  top: 384px;
+  left: 0;
+}
+.left-bullets {
+  top: 1216px;
+  left: 0;
+}
+.blue-circles {
+  top: 1894px;
+  left: 0;
+}
+.bottom-bullets {
+  flex-direction: row;
+  top: 1980px;
+  right: 0;
+}
+.top-bullets {
+  top: 80px;
+  right: 0;
+}
+.green-circles {
+  top: 786px;
+  right: 61px;
+}
+.check-mark {
+  list-style: none;
+}
+
+.check-mark li:before {
+  content: "✓ ";
+}
+.persian-decimal > li:before {
   font-size: 16px;
-  font-style: normal;
+  font-family: IranSansNum;
+}
+ol {
+  list-style-type: none;
+  counter-reset: ol-counter;
+  font-size: 16px;
   font-weight: 500;
   line-height: 28px;
 }
-mat-panel-title {
-  color: #3d3d3d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-  border-radius: 8px;
-}
-.mat-expansion-panel:not([class*="mat-elevation-z"]) {
-  box-shadow: none;
-  border-radius: 8px;
+.persian-decimal li:before {
+  content: counter(ol-counter) "- ";
+  counter-increment: ol-counter;
 }
