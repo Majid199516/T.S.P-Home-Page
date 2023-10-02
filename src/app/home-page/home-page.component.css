@@ -1,5 +1,4 @@
 nav .taksa-logo {
-  /* background-color: red; */
   width: 85px;
   height: 75px;
   margin: 0 15px;
@@ -44,30 +43,20 @@ header {
   border-radius: 4px;
   padding: 8px 16px;
 }
-/* .img-slider {
-  background-image: url(../../assets/shared/images/Image-slider.png);
-  background-repeat: no-repeat;
-  width: 1440px;
-  height: 1000px;
-  margin: auto;
-} */
 hr {
   border: 1px solid #fff;
 }
 .head {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   box-shadow: 0 0 10px 0 rgba(32, 82, 149, 0.25);
 }
+.links a:hover {
+  cursor: pointer;
+}
 .container {
-  /* background-image: url(../../assets/shared/images/Image-slider.png);
-  background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
-  /* height: 849px; */
 }
 .signin-btn:hover,
 .links a:hover,
@@ -96,14 +85,11 @@ hr {
   width: 100%;
   margin-top: 166px;
   align-items: center;
-  /* flex-wrap: nowrap; */
 }
 .articles h5 {
   color: #3d3d3d;
 }
 .free-sign-up li div {
-  /* display: flex; */
-  /* justify-content: center; */
   align-items: center;
 }
 .free-sign-up li {
@@ -149,7 +135,6 @@ hr {
   flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
-  /* margin-left: -130px; */
   box-sizing: content-box;
   word-spacing: 2px;
 }
@@ -161,7 +146,6 @@ hr {
 }
 .sign-up-guide li div {
   display: flex;
-  /* justify-content: start; */
 }
 .shadow {
   position: absolute;
@@ -195,7 +179,6 @@ hr {
   border: none;
   border-radius: 8px;
   transition: all 100ms;
-  box-shadow: 5px 5px #666;
 }
 .add-invoice:hover {
   background-color: #f7662d;
@@ -272,8 +255,6 @@ hr {
   text-align: center;
 }
 .decription .ladder {
-  /* width: 39.582px;
-  height: 290px; */
   margin: 25px 0;
 }
 .decription .left-side {
@@ -316,10 +297,14 @@ hr {
   text-align: center;
   position: relative;
   z-index: 2;
-
-  /* display: flex;
-  justify-content: center; */
-  /* align-items: baseline; */
+}
+.taksa-bullets {
+  position: absolute;
+  left: 0;
+  top: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .taksa-target-title {
   display: inline;
@@ -346,7 +331,6 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: 40px;
-  /* word-spacing: 1px; */
   margin: 48px 97px 64px 98px;
 }
 .taksa-target span:last-of-type {
@@ -370,7 +354,7 @@ hr {
 .add-invoice-steps h2 {
   margin-top: 200px;
   margin-bottom: 100px;
-  /* font-family: Anjoman; */
+  font-family: Anjoman;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -384,8 +368,6 @@ hr {
   position: relative;
   font-size: 16px;
   font-weight: 700;
-
-  /* margin-bottom: 233px; */
 }
 .add-invoice-steps .odd-steps div p:first-of-type,
 .add-invoice-steps .even-steps div p:first-of-type {
@@ -402,11 +384,8 @@ hr {
 .odd-steps {
   display: flex;
   gap: 145px;
-  /* justify-content: space-between;
-  align-items: center; */
 }
-/* .odd-steps div:first-child {
-} */
+
 .add-invoice-steps h2 {
   display: block;
   text-align: center;
@@ -429,7 +408,6 @@ hr {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* margin-left: 10px; */
   gap: 150px;
 }
 .arrow {
@@ -450,13 +428,7 @@ hr {
 .help-content {
   margin-top: 233px;
   position: relative;
-  /* text-align: center; */
   display: flex;
-
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
-  /* width: 100%; */
   flex-direction: column;
 }
 .help {
@@ -484,7 +456,7 @@ hr {
   content: " ";
   width: 914px;
   height: 570px;
-  /* margin: auto; */
+
   border-radius: 8px;
   background: #bfd3eb;
   position: absolute;
@@ -532,7 +504,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 200px 0 0 0; */
+
   position: relative;
 }
 .solutions h2 {
@@ -578,7 +550,6 @@ hr {
   border-radius: 16px;
   background: #fff;
   margin-bottom: 200px;
-  /* gap: 70px; */
 }
 .connecting-left-side ul,
 .connecting-right-side ul {
@@ -629,7 +600,6 @@ hr {
 }
 .questions {
   width: 100%;
-  /* margin: 200px 0 0; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -834,4 +804,7 @@ hr {
   flex-direction: column;
   gap: 15px;
   margin-left: 3px;
+}
+input {
+  outline: none;
 }

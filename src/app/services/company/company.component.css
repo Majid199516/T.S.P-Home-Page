@@ -1,0 +1,144 @@
+nav .taksa-logo {
+  /* background-color: red; */
+  width: 85px;
+  height: 75px;
+  margin: 0 15px;
+}
+.navbar {
+  padding: 16px 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #204066;
+  position: fixed;
+  left: -200;
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0px 0px 10px 0px rgba(32, 82, 149, 0.25);
+}
+.links a {
+  margin-left: 32px;
+}
+header {
+  font-family: IRANSansX;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 151px;
+  flex-wrap: nowrap;
+}
+.signin-btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  background-color: #204066;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+/* .img-slider {
+  background-image: url(../../assets/shared/images/Image-slider.png);
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 1000px;
+  margin: auto;
+} */
+hr {
+  border: 1px solid #fff;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  box-shadow: 0 0 10px 0 rgba(32, 82, 149, 0.25);
+}
+.links a:hover {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  width: 100%;
+  margin: 200px 0 0;
+  font-family: IranSansX;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h2 {
+  color: #3d3d3d;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+.bussiness-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bussiness-info form {
+  margin: 60px 440px 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bussiness-info fieldset {
+  border: none;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.bussiness-info form > input {
+  font-family: IranSansnum;
+  width: 45%;
+  height: 40px;
+  padding: 8px 12px;
+  align-items: center;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+}
+.bussiness-info form div {
+  display: flex;
+  width: 100%;
+}
+.bussiness-info form div label {
+  font-family: IranSansNum;
+  margin: 0 8px 0 4px;
+  color: #242424;
+  font-size: 12px;
+  font-weight: 700;
+}
+.bussiness-info form div input {
+  margin: 0 0 0 32px;
+  outline: none;
+}
+.bussiness-info form button {
+  border-radius: 8px;
+  font-family: IranSansX;
+  background: #f27f51;
+  display: flex;
+  width: 270px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  border: none;
+  margin: 72px auto 0;
+  outline: none;
+  justify-self: center;
+}
