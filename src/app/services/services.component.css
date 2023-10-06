@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .container .guilds-approach h2,
 .organization-approach h2 {
@@ -157,4 +158,7 @@ hr {
 .container button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+.image {
+  width: 100%;
 }

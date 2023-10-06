@@ -7,6 +7,9 @@
   justify-content: center;
   background: #f5f7fa;
 }
+.image {
+  width: 100%;
+}
 
 .container h2 {
   color: #204066;

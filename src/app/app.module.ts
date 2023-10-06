@@ -12,6 +12,15 @@ import { ServicesComponent } from './services/services.component';
 import { CompanyComponent } from './services/company/company.component';
 import { Service2Component } from './services/service2/service2.component';
 import { ServicesMenuComponent } from './services/services-menu/services-menu.component';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
+import {
+  IgxCarouselModule,
+  IgxIconModule,
+  IgxSelectModule,
+  IgxButtonModule,
+  IgxCardModule,
+} from 'igniteui-angular';
+import { IgxGridModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -24,16 +33,21 @@ import { ServicesMenuComponent } from './services/services-menu/services-menu.co
     CompanyComponent,
     Service2Component,
     ServicesMenuComponent,
-
+    ImageSliderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatExpansionModule,
-
+    IgxCarouselModule,
+    IgxIconModule,
+    IgxSelectModule,
+    IgxButtonModule,
+    IgxCardModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [],
+
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
