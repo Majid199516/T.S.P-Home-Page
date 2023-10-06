@@ -154,3 +154,7 @@ hr {
   gap: 14px;
   margin: 3px;
 }
+.container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

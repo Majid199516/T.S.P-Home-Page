@@ -91,3 +91,6 @@ ol {
   content: counter(ol-counter) "- ";
   counter-increment: ol-counter;
 }
+a {
+  color: #2e81ff;
+}

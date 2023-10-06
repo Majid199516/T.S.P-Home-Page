@@ -186,11 +186,9 @@ hr {
 
 .add-invoice:active {
   background-color: #f7662d;
-  box-shadow: none;
-  transform: translateY(4px);
 }
 .signin-btn:hover {
-  background-color: rgba(32, 64, 102, 0.9);
+  opacity: 0.9;
 }
 .connected {
   width: 81px;
@@ -571,8 +569,7 @@ hr {
   font-weight: 700;
   line-height: 47.98px;
 }
-.connecting-left-side input,
-.connecting-right-side input {
+.connecting-taksa input {
   width: 273px;
   height: 51px;
   padding: 11.995px 26.988px;
@@ -585,6 +582,10 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.connecting-taksa input:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 .connecting-left-side {
   gap: 70px;
@@ -667,6 +668,11 @@ hr {
   line-height: 28px;
   background-color: transparent;
 }
+.questions input:hover {
+  background-color: rgba(18, 180, 139, 0.3);
+  color: #fff;
+  cursor: pointer;
+}
 .check-mark {
   list-style: none;
 }
@@ -698,6 +704,10 @@ hr {
   align-items: center;
   gap: 24px;
   margin-bottom: 48px;
+}
+.news-boxes a:hover {
+  cursor: pointer;
+  width: max-content;
 }
 .news-boxes > div {
   width: 348px;

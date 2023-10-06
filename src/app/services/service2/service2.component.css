@@ -113,3 +113,8 @@
   right: 0;
   top: 1066px;
 }
+form button:hover,
+form input:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

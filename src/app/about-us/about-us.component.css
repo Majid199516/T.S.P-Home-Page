@@ -118,6 +118,7 @@
 .first-name,
 .email,
 .phone-number {
+  text-align: right;
   margin: 8px;
   font-family: iransansnum;
   flex-grow: 1;
@@ -161,6 +162,11 @@ textarea {
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+}
+.persons-info input:hover,
+.persons-info button:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 .taksa-info {
   display: flex;

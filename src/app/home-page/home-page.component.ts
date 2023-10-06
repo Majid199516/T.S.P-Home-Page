@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent {
+  constructor(private router: Router, private route: ActivatedRoute) {}
   rotateChavron1st = false;
   showPh1st = false;
   rotateChavron2nd = false;
@@ -60,5 +62,17 @@ export class HomePageComponent {
       this.showPh5th = false;
       this.rotateChavron5th = false;
     }
+  }
+  openTSP() {
+    window.open('http://192.168.36.68/login', '_blank');
+  }
+  goToServices2() {
+    this.router.navigate(['/direct-signUp']);
+  }
+  goToService() {
+    this.router.navigate(['/connecting-with-taksa']);
+  }
+  goToQuestion() {
+    this.router.navigate(['/questions']);
   }
 }

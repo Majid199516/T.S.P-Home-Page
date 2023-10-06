@@ -23,7 +23,12 @@
           <a> پشتیبانی </a>
           <a> درباره ما </a>
         </div>
-        <input class="signin-btn" type="button" value="ورود | ثبت‌نام" />
+        <input
+          class="signin-btn"
+          type="button"
+          value="ورود | ثبت‌نام"
+          (click)="openTSP()"
+        />
       </nav>
       <hr />
     </header>
@@ -81,7 +86,12 @@
               کنید.
             </p>
           </li>
-          <input class="add-invoice" type="button" value="ثبت رایگان" />
+          <input
+            class="add-invoice"
+            type="button"
+            value="ثبت رایگان"
+            (click)="openTSP()"
+          />
         </ul>
       </div>
       <div class="sign-up-img">
@@ -1761,7 +1771,11 @@
             </li>
             <li>امکان ارائه وب سرویس (API) به کسب و کارها</li>
           </ul>
-          <input type="button" value="اطلاعات بیشتر" />
+          <input
+            type="button"
+            value="اطلاعات بیشتر"
+            (click)="goToServices2()"
+          />
         </div>
         <div class="connecting-left-side">
           <svg
@@ -1825,7 +1839,7 @@
             <li>راهکار ویژه اصناف</li>
             <li>راهکار ویژه سازمان‌ها</li>
           </ul>
-          <input type="button" value="اطلاعات بیشتر" />
+          <input type="button" value="اطلاعات بیشتر" (click)="goToService()" />
         </div>
       </div>
       <div class="bullets">
@@ -2503,7 +2517,7 @@
             </mat-expansion-panel>
           </mat-accordion>
         </div>
-        <input type="button" value="مشاهده بیشتر" />
+        <input type="button" value="مشاهده بیشتر" (click)="goToQuestion()" />
         <div class="bullets2nd">
           <svg
             xmlns="http://www.w3.org/2000/svg"

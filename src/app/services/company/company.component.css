@@ -142,3 +142,15 @@ hr {
   outline: none;
   justify-self: center;
 }
+.bussiness-info button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.bussiness-info input:hover,
+.bussiness-info label:hover {
+  cursor: pointer;
+}
+.signin-btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}

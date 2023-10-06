@@ -201,3 +201,7 @@ hr {
   display: flex;
   gap: 14px;
 }
+.container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
