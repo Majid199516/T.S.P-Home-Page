@@ -6,8 +6,8 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./services.component.css'],
 })
 export class ServicesComponent {
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private route: ActivatedRoute, private router: Router) { }
   goToCompany() {
-    this.router.navigate(['/company']);
+    this.router.navigate(['/company'], { state: { isCompany: "true" } });
   }
 }

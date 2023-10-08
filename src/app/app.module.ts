@@ -21,6 +21,7 @@ import {
   IgxCardModule,
 } from 'igniteui-angular';
 import { IgxGridModule } from 'igniteui-angular';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { IgxGridModule } from 'igniteui-angular';
     Service2Component,
     ServicesMenuComponent,
     ImageSliderComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

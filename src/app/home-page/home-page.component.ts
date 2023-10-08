@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,7 +7,12 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute) { }
+  // @HostListener('window:scroll', ['$event']) // for window scroll events
+  // onScroll(event: Event) {
+  //   this.scrolled = true
+  // }
+  scrolled = false
   rotateChavron1st = false;
   showPh1st = false;
   rotateChavron2nd = false;
@@ -75,4 +80,18 @@ export class HomePageComponent {
   goToQuestion() {
     this.router.navigate(['/questions']);
   }
+  numberofscroll: number = 0
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    this.numberofscroll = window.pageYOffset
+
+    if (this.numberofscroll) {
+      this.scrolled = true
+    } else {
+      this.scrolled = false
+    }
+
+
+  }
+
 }

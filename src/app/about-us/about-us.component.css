@@ -1,9 +1,11 @@
 .container {
-  font-family: IranSansX;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+header {
+  width: 100%;
 }
 .smart-process {
   width: 100%;
@@ -15,7 +17,7 @@
   position: relative;
 }
 .smart-process span {
-  font-family: IranSansNum;
+  font-family: IranSansNum !important;
 }
 .smart-process p {
   width: 49%;
@@ -29,7 +31,7 @@
 .smart-process h2 {
   margin: 150px 0 100px;
   color: #204066;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -80,6 +82,7 @@
   align-items: center;
   z-index: 2;
   flex-direction: column;
+  box-sizing: border-box !important;
 }
 #soul {
   position: absolute;
@@ -109,10 +112,11 @@
 .persons-info {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
   transform: rotate(3.459deg);
   /* gap: 16px; */
   width: 780px;
+  box-sizing: border-box !important;
 }
 .last-name,
 .first-name,
@@ -120,9 +124,9 @@
 .phone-number {
   text-align: right;
   margin: 8px;
-  font-family: iransansnum;
+  font-family: iransansnum !important;
   flex-grow: 1;
-  height: 24px;
+  height: 24px !;
   padding: 8px 12px;
   width: 44%;
   font-size: 14px;
@@ -131,6 +135,7 @@
   line-height: 20px;
   border-radius: 4px;
   border: 1px solid #d1d1d1;
+  box-sizing: content-box !important;
 }
 textarea {
   height: 120px;
@@ -143,11 +148,12 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  font-family: iransansnum;
+  font-family: iransansnum !important;
   text-overflow: ellipsis;
+  box-sizing: content-box !important;
 }
 .persons-info button {
-  width: 96.7%;
+  width: 91%;
   margin-right: 6px;
   padding: 10px 24px;
   justify-content: center;
@@ -157,11 +163,11 @@ textarea {
   background: #f27f51;
   border: none;
   color: #fff;
-  font-family: IRANSansX;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  box-sizing: content-box !important;
 }
 .persons-info input:hover,
 .persons-info button:hover {
@@ -196,7 +202,7 @@ textarea {
   background: #f5f7fa;
   margin: 9px;
   padding: 13.11px 19.665px;
-  font-family: iransansnum;
+  font-family: iransansnum !important;
   font-size: 14px;
   display: flex;
   color: #204066;

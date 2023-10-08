@@ -5,7 +5,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: IranSansX;
 }
 .taksa-footer-logo h6 {
   font-size: 11px;
@@ -95,6 +94,12 @@ footer {
   border-radius: 8px;
   margin: 0 8px;
 }
-.phone {
-  font-family: IranSansNum;
+#phone {
+  font-family: IranSansNum !important;
+}
+#phone,
+#mail,
+#location {
+  padding: 0 16px;
+  margin: 0 !important;
 }

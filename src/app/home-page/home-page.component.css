@@ -1,62 +1,40 @@
-nav .taksa-logo {
-  width: 85px;
-  height: 75px;
-  margin: 0 15px;
-}
-.navbar {
-  padding: 16px 0 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 65px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  color: #204066;
-  position: fixed;
-  left: -200;
-  background-color: #fff;
-  width: 100%;
-  z-index: 5;
-  box-shadow: 0px 0px 10px 0px rgba(32, 82, 149, 0.25);
-}
-.links a {
-  margin-left: 32px;
-}
-header {
-  font-family: IRANSansX;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 151px;
-  flex-wrap: nowrap;
-}
-.signin-btn {
-  font-family: inherit;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  color: #fff;
-  background-color: #204066;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-}
-hr {
-  border: 1px solid #fff;
-}
-.head {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 10px 0 rgba(32, 82, 149, 0.25);
-}
-.links a:hover {
-  cursor: pointer;
-}
 .container {
   background-position: center;
   background-size: cover;
+}
+.head {
+  position: relative;
+}
+.taksa-head-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  position: absolute;
+  left: 50%;
+  top: 88vh;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.taksa-head-box > div {
+  background-color: #fff;
+  width: 210px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(171, 190, 209, 0.4);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  color: #3d3d3d;
+  padding: 40px 0px;
+}
+.taksa-head-box > div span {
+  font-family: IranSansNum !important;
 }
 .signin-btn:hover,
 .links a:hover,
@@ -68,7 +46,6 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: IranSansX;
 }
 .articles .article-header {
   color: #204066;
@@ -78,7 +55,7 @@ hr {
   line-height: 28px;
   text-align: center;
   margin-bottom: 48px;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
 }
 .free-sign-up {
   display: flex;
@@ -121,7 +98,7 @@ hr {
   color: #3d3d3d;
 }
 .free-sign-up li div p {
-  font-size: 14px;
+  font-size: 14px !important;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -140,9 +117,11 @@ hr {
 }
 .sign-up-guide p {
   padding-right: 35px;
+  font-size: 14px !important;
 }
 .sign-up-guide a {
   color: #2e81ff;
+  font-size: 14px !important;
 }
 .sign-up-guide li div {
   display: flex;
@@ -167,7 +146,6 @@ hr {
 }
 .add-invoice {
   background-color: #f27f51;
-  font-family: IRANSansX;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -228,7 +206,7 @@ hr {
   margin-top: 200px;
   margin-bottom: 100px;
   text-align: center;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
 }
 .decription {
   display: flex;
@@ -237,7 +215,7 @@ hr {
 }
 .decription div p {
   text-align: center;
-  font-family: IranSansNum;
+  font-family: IranSansNum !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -286,7 +264,7 @@ hr {
 }
 .taksa-target {
   width: 754px;
-  height: 410px;
+  /* height: 410px; */
   background-color: #204066;
   margin: auto;
   margin-bottom: 200px;
@@ -307,7 +285,7 @@ hr {
 .taksa-target-title {
   display: inline;
   text-align: center;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -324,7 +302,7 @@ hr {
 .target-article {
   color: #fff;
   text-align: justify;
-  font-family: IRANSansX;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -347,12 +325,12 @@ hr {
 .circles {
   position: absolute;
   right: -78px;
-  top: 436px;
+  top: 448px;
 }
 .add-invoice-steps h2 {
   margin-top: 200px;
   margin-bottom: 100px;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -369,12 +347,13 @@ hr {
 }
 .add-invoice-steps .odd-steps div p:first-of-type,
 .add-invoice-steps .even-steps div p:first-of-type {
-  font-family: IranSanSNum;
+  font-family: IranSanSNum !important;
   font-size: 28px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   text-align: center;
+  box-sizing: content-box !important ;
 }
 .add-invoice-steps .odd-steps div p:nth-child(3) {
   font-weight: 400;
@@ -387,7 +366,7 @@ hr {
 .add-invoice-steps h2 {
   display: block;
   text-align: center;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
 }
 .odd-steps div {
   text-align: center;
@@ -410,7 +389,7 @@ hr {
 }
 .arrow {
   position: absolute;
-  top: 625px;
+  top: 720px;
   right: 655px;
 }
 .taksa-start {
@@ -440,12 +419,13 @@ hr {
 }
 #taksa-help {
   width: 914px;
-  height: 570px;
+  height: 663px;
   transition: 1s;
   transform: rotate(-3.459deg);
   background-color: #f5f7fa;
   border-radius: 8px;
   z-index: 2;
+  box-sizing: content-box !important;
 }
 #soul {
   position: absolute;
@@ -453,8 +433,7 @@ hr {
 #soul::before {
   content: " ";
   width: 914px;
-  height: 570px;
-
+  height: 663px;
   border-radius: 8px;
   background: #bfd3eb;
   position: absolute;
@@ -465,7 +444,7 @@ hr {
   transform: rotate(3.459deg);
   color: #3d3d3d;
   text-align: justify;
-  font-family: IRANSansNum;
+  font-family: IRANSansNum !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -477,7 +456,7 @@ hr {
   margin: 75px 0 50px;
   color: #204066;
   text-align: center;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -508,7 +487,7 @@ hr {
 .solutions h2 {
   color: #204066;
   text-align: right;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -548,6 +527,7 @@ hr {
   border-radius: 16px;
   background: #fff;
   margin-bottom: 200px;
+  box-sizing: content-box !important;
 }
 .connecting-left-side ul,
 .connecting-right-side ul {
@@ -563,7 +543,6 @@ hr {
   text-align: center;
   padding: 0 70px;
   text-align: center;
-  font-family: IRANSansX;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -577,7 +556,6 @@ hr {
   border: none;
   background: #12b48b;
   color: #fff;
-  font-family: IRANSansX;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -632,7 +610,7 @@ hr {
   margin: 200px 0 100px;
   color: #204066;
   text-align: right;
-  font-family: Anjoman;
+  font-family: Anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -661,7 +639,6 @@ hr {
   border: 2px solid #12b48b;
   color: #12b48b;
   width: 160px;
-  font-family: IRANSansX;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -693,7 +670,7 @@ hr {
 .news h2 {
   margin: 200px 0 100px;
   color: #204066;
-  font-family: anjoman;
+  font-family: anjoman !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -796,7 +773,6 @@ hr {
   border-radius: 8px;
   border: 2px solid #12b48b;
   background-color: #fff;
-  font-family: IranSansX;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
